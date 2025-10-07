@@ -1,16 +1,44 @@
-# React + Vite
+# 🌍 WordCrack · 拆字達人
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 一個結合字根學習與 AI 例句生成的英文單字互動平台。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📘 專案簡介
 
-## React Compiler
+**WordCrack 拆字達人** 是一個專為英文學習者設計的線上工具，  
+透過「字根、字首、字尾」的結構化查詢方式，幫助使用者快速理解單字意義、詞源邏輯，  
+並結合 **Google Gemini AI** 智慧生成例句與中文解釋，讓學習更生動、靈活與有效。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 核心功能
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 **單字查詢系統**：輸入字根或單字，即可查看詞源、相關字與例句。  
+- 🧩 **延伸字彙學習**：顯示含相同字根的單字與用法。  
+- 💡 **AI 智慧例句生成**：串接 Google Gemini API，自動生成英文例句與繁體中文解釋。  
+- ⭐ **收藏功能**：可將喜歡或常用字根加入收藏清單，方便複習。  
+- 📱 **RWD 響應式設計**：支援電腦與手機瀏覽。  
+
+---
+
+## 🛠️ 使用技術
+
+| 類別 | 技術 |
+|------|------|
+| 前端框架 | React + Vite |
+| 樣式系統 | Tailwind CSS |
+| AI 模型 | Google Gemini 1.5 Flash |
+| 資料儲存 | JSON / Firebase（可擴充） |
+| 版本控制 | Git + GitHub |
+
+---
+
+## 🚀 本地端啟動方式
+
+```bash
+# 安裝套件
+npm install
+
+# 啟動開發伺服器
+npm run dev
