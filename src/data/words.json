@@ -1,0 +1,29 @@
+[
+    {
+      "id": "root-geo",
+      "type": "root",
+      "key": "geo",
+      "meaning": "Earth; ground",
+      "notes": "Used in words related to the earth or land.",
+      "examples": ["geology", "geography", "geothermal"],
+      "related": [
+        { "word": "geology", "meaning": "study of the Earth", "example": "She studied geology to understand earthquakes." },
+        { "word": "geography", "meaning": "study of land and features", "example": "Geography explains how rivers shape land." },
+        { "word": "geothermal", "meaning": "related to Earth's heat", "example": "The city uses geothermal energy." }
+      ]
+    },
+    {
+      "id": "prefix-tele",
+      "type": "prefix",
+      "key": "tele-",
+      "meaning": "far; at a distance",
+      "notes": "Used in words about communication over distance.",
+      "examples": ["telephone", "television", "telepathy"],
+      "related": [
+        { "word": "telephone", "meaning": "device for long-distance voice communication", "example": "He called her on the telephone." },
+        { "word": "television", "meaning": "device for broadcasting visual media", "example": "They watched the news on television." },
+        { "word": "telepathy", "meaning": "communication of thoughts without words", "example": "The twins claimed to have telepathy." }
+      ]
+    }
+  ]
+  

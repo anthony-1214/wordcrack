@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Global style enhancements === */
+body {
+  @apply bg-gradient-to-b from-slate-50 to-slate-100 text-slate-800 font-sans;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.3); /* slate-500/30 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.5);
+}
+
+/* === Animation effects === */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply to containers when entering view */
+.animate-fade-in {
+  animation: fade-in 0.4s ease-in-out;
+}
+
+.animate-pop-in {
+  animation: pop-in 0.35s ease-out;
+}
+
+/* === Card shadow preset === */
+.card {
+  @apply bg-white border border-slate-200 rounded-2xl shadow-md;
+  @apply transition duration-200 ease-in-out hover:shadow-lg hover:scale-[1.01];
+}
+
+/* === Button hover/active styling === */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition;
+}
+.btn-primary {
+  @apply bg-slate-900 text-white hover:bg-slate-700 active:bg-slate-800;
+}
+.btn-outline {
+  @apply border border-slate-300 text-slate-700 hover:bg-slate-50 active:bg-slate-100;
+}
+.btn-ai {
+  @apply bg-indigo-600 text-white hover:bg-indigo-700 active:bg-indigo-800;
+}
